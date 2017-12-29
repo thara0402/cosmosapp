@@ -1,0 +1,10 @@
+/Users/thara/Develop/cosmosapp/bin/Debug/netcoreapp2.0/cosmosapp.deps.json
+/Users/thara/Develop/cosmosapp/bin/Debug/netcoreapp2.0/cosmosapp.runtimeconfig.json
+/Users/thara/Develop/cosmosapp/bin/Debug/netcoreapp2.0/cosmosapp.runtimeconfig.dev.json
+/Users/thara/Develop/cosmosapp/bin/Debug/netcoreapp2.0/cosmosapp.dll
+/Users/thara/Develop/cosmosapp/bin/Debug/netcoreapp2.0/cosmosapp.pdb
+/Users/thara/Develop/cosmosapp/obj/Debug/netcoreapp2.0/cosmosapp.csproj.CoreCompileInputs.cache
+/Users/thara/Develop/cosmosapp/obj/Debug/netcoreapp2.0/cosmosapp.AssemblyInfoInputs.cache
+/Users/thara/Develop/cosmosapp/obj/Debug/netcoreapp2.0/cosmosapp.AssemblyInfo.cs
+/Users/thara/Develop/cosmosapp/obj/Debug/netcoreapp2.0/cosmosapp.dll
+/Users/thara/Develop/cosmosapp/obj/Debug/netcoreapp2.0/cosmosapp.pdb
