@@ -31,6 +31,7 @@ namespace cosmosapp
                 return new DocumentClient(new Uri(EndpointUri), PrimaryKey);
             });
             services.AddSingleton<PersonRepository>();
+            services.AddSingleton<GourmetRepository>();
             services.AddMvc();
         }
 

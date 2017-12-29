@@ -17,9 +17,14 @@ namespace cosmosapp.Controllers
         private const string EndpointUri = "https://xxx1216.documents.azure.com:443/";
         private const string PrimaryKey = "dG4VVoVXPVWIj1x67SV3m6ntBgPwxxxMP459eqNoqaLgSFI3c4VFfp8w4fwK2kc3OxOd36gYKmoxYrnaV2YE5w==";
 //        private DocumentClient client;
-        private readonly PersonRepository _repository;
+        //private readonly PersonRepository _repository;
+        private readonly GourmetRepository _repository;
 
-        public HomeController(PersonRepository repository)
+        // public HomeController(PersonRepository repository)
+        // {
+        //     _repository = repository;
+        // }
+        public HomeController(GourmetRepository repository)
         {
             _repository = repository;
         }
@@ -28,21 +33,33 @@ namespace cosmosapp.Controllers
         
         public async Task<IActionResult> Index()
         {
-            var person = await _repository.GetByNameAsync("クトリ");
-            if (person == null)
+            // var gourmetList = GourmetClient.Create("/Users/thara/Develop/cosmosapp/Models/Gourmet.json");
+            // foreach (var gourmet in gourmetList)
+            // {
+            //     await _repository.CreateAsync(gourmet);
+            // }
+            var test = await _repository.GetAllAsync();
+//            var test = await _repository.GetByDistanceAsync(139.906957, 35.707022, 5000/*5km*/);
+            foreach (var del in test)
             {
-                person = new Person{
-                    Name = "クトリ"
-                };
-                await _repository.CreateAsync(person);
-                person = await _repository.GetAsync(person.Id);
+//                await _repository.DeleteAsync(del);
             }
-            person.Name = "ネフレン";
-            await _repository.UpdateAsync(person);
 
-            var test = await _repository.GetAllAsync("ネフレン");
+            // var person = await _repository.GetByNameAsync("クトリ");
+            // if (person == null)
+            // {
+            //     person = new Person{
+            //         Name = "クトリ"
+            //     };
+            //     await _repository.CreateAsync(person);
+            //     person = await _repository.GetAsync(person.Id);
+            // }
+            // person.Name = "ネフレン";
+            // await _repository.UpdateAsync(person);
 
-            await _repository.DeleteAsync(person);
+            // var test = await _repository.GetAllAsync("ネフレン");
+
+            // await _repository.DeleteAsync(person);
 
 
 //             var databaseName = "Person";
