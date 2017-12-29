@@ -33,17 +33,18 @@ namespace cosmosapp.Controllers
         
         public async Task<IActionResult> Index()
         {
+            await GourmetClient.Search(139.906957, 35.707022);
             // var gourmetList = GourmetClient.Create("/Users/thara/Develop/cosmosapp/Models/Gourmet.json");
             // foreach (var gourmet in gourmetList)
             // {
             //     await _repository.CreateAsync(gourmet);
             // }
-            var test = await _repository.GetAllAsync();
-//            var test = await _repository.GetByDistanceAsync(139.906957, 35.707022, 5000/*5km*/);
-            foreach (var del in test)
-            {
-//                await _repository.DeleteAsync(del);
-            }
+//             var test = await _repository.GetAllAsync();
+// //            var test = await _repository.GetByDistanceAsync(139.906957, 35.707022, 5000/*5km*/);
+//             foreach (var del in test)
+//             {
+// //                await _repository.DeleteAsync(del);
+//             }
 
             // var person = await _repository.GetByNameAsync("クトリ");
             // if (person == null)
